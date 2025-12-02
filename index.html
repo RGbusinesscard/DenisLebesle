@@ -52,29 +52,20 @@ body{
 }
 
 /* ---- LOGO ---- */
-.logo{
-  display:flex;
-  justify-content:center;
-  margin-bottom:18px;
-}
-.logo img{
-  width:210px;
-  border-radius:8px;
-  background:#fff;
-}
+.logo{display:flex;justify-content:center;margin-bottom:18px;}
+.logo img{width:210px;border-radius:8px;background:#fff;}
 
 /* ---- INFOS ---- */
 .infos{text-align:center;color:#fff;margin-bottom:26px;}
 .infos .societe{text-transform:uppercase;letter-spacing:.1rem;font-size:.85rem;color:#e2e8f0;margin-bottom:4px;}
 .infos .nom{font-size:1.2rem;font-weight:600;color:#fff;}
 .infos .poste{color:#cbd5e1;margin-bottom:6px;}
-.infos .tel{font-size:1.05rem;font-weight:500;color:#fff;}
 
 /* ---- BOUTONS ---- */
 .links{display:flex;flex-direction:column;gap:12px;}
 .btn{
   padding:13px;border-radius:14px;text-decoration:none;text-align:center;
-  font-size:1rem;font-weight:500;color:#fff;transition:.18s;
+  font-size:1.4rem;font-weight:500;color:#fff;transition:.18s;
 }
 .btn-primary{
   background:linear-gradient(135deg,#b21f2d,#82141e);
@@ -106,13 +97,19 @@ body{
     <div class="societe">Société LUDOVIC ROBERT</div>
     <div class="nom">Denis Lebesle</div>
     <div class="poste">Chargé d’affaire</div>
-    <div class="tel">0673865797</div>
   </div>
 
   <div class="links">
-    <a href="tel:0673865797" class="btn btn-primary">📞 Appeler</a>
-    <a href="mailto:dlebesle@robert-platrerie.fr" class="btn btn-outline">✉️ dlebesle@robert-platrerie.fr</a>
-    <a href="https://www.robert-platriere-lemans.fr" class="btn btn-outline" target="_blank">🌐 Voir le site</a>
+    
+    <!-- BOUTON APPELER (emoji uniquement) -->
+    <a href="tel:0673865797" class="btn btn-primary">📞</a>
+
+    <!-- BOUTON EMAIL (emoji uniquement) -->
+    <a href="mailto:dlebesle@robert-platrerie.fr" class="btn btn-outline">✉️</a>
+
+    <!-- BOUTON SITE (emoji uniquement) -->
+    <a href="https://www.robert-platriere-lemans.fr" class="btn btn-outline" target="_blank">🌐</a>
+
   </div>
 
   <div class="bottom">Carte de visite dématérialisée – Ludovic Robert</div>
