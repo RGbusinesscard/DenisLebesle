@@ -77,6 +77,33 @@ body{
   background:rgba(255,255,255,0.07);
 }
 .btn-outline:active{transform:scale(.97);background:rgba(255,255,255,0.18);}
+
+/* ---- MAP ---- */
+.map-card{
+  margin-top:18px;
+  border-radius:16px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,0.25);
+  background:rgba(0,0,0,0.25);
+}
+.map-title{
+  padding:8px 12px;
+  font-size:0.8rem;
+  text-transform:uppercase;
+  letter-spacing:.08rem;
+  color:#e5e7eb;
+}
+.map-frame-wrapper{
+  width:100%;
+  height:220px;
+}
+.map-frame-wrapper iframe{
+  border:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
 .bottom{text-align:center;margin-top:18px;color:#cbd5e1;font-size:.75rem;}
 </style>
 </head>
@@ -100,7 +127,6 @@ body{
   </div>
 
   <div class="links">
-    
     <!-- BOUTON APPELER (emoji uniquement) -->
     <a href="tel:0673865797" class="btn btn-primary">📞</a>
 
@@ -109,7 +135,18 @@ body{
 
     <!-- BOUTON SITE (emoji uniquement) -->
     <a href="https://www.robert-platriere-lemans.fr" class="btn btn-outline" target="_blank">🌐</a>
+  </div>
 
+  <!-- BLOC LOCALISATION / MAP INTERACTIVE -->
+  <div class="map-card">
+    <div class="map-title">Localisation</div>
+    <div class="map-frame-wrapper">
+      <iframe
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Ludovic+Robert+Artisan+Plaquiste+Le+Mans&output=embed">
+      </iframe>
+    </div>
   </div>
 
   <div class="bottom">Carte de visite dématérialisée – Ludovic Robert</div>
