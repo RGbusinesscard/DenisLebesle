@@ -30,11 +30,18 @@
       max-width: 92vw;
       border-radius: 28px;
       padding: 26px 20px 22px;
-      background: linear-gradient(155deg, #0a0f1b 0%, #121929 40%, #0b0f18 100%);
-      border: 1.5px solid rgba(255, 255, 255, 0.08);
+
+      /* ---- AJOUT : cadre néon blanc ---- */
+      border: 2px solid rgba(255, 255, 255, 0.75);
       box-shadow:
-        0 0 30px rgba(0, 0, 0, 0.6),
+        0 0 12px rgba(255, 255, 255, 0.65),
+        0 0 22px rgba(255, 255, 255, 0.45),
+        0 0 42px rgba(255, 255, 255, 0.25),
+        0 0 65px rgba(0, 0, 0, 0.7),
         0 25px 60px rgba(0, 0, 0, 0.9);
+      /* ---- FIN AJOUT ---- */
+
+      background: linear-gradient(155deg, #0a0f1b 0%, #121929 40%, #0b0f18 100%);
       display: flex;
       flex-direction: column;
       gap: 18px;
@@ -86,7 +93,7 @@
       margin-top: 2px;
     }
 
-    /* Boutons – sobres et modernes */
+    /* Boutons sobres */
     .actions {
       display: flex;
       justify-content: center;
@@ -124,17 +131,17 @@
       font-size: 1.1rem;
     }
 
-    /* Téléphone – rouge profond, pas flash */
+    /* Téléphone – rouge profond */
     .action-btn.phone {
       background: linear-gradient(135deg, #8f252b, #64161a);
     }
 
-    /* Mail – bleu profond, pas fluo */
+    /* Mail – bleu profond */
     .action-btn.mail {
       background: linear-gradient(135deg, #35548a, #23345b);
     }
 
-    /* Site – gris bleuté neutre */
+    /* Site – gris bleu foncé */
     .action-btn.site {
       background: linear-gradient(135deg, #3b404c, #262a34);
     }
@@ -211,7 +218,7 @@
           <span class="icon">✉️</span>
           <span>E-mail</span>
         </a>
-        <a class="action-btn site" href="https://www.robert-platrerie-lemans.fr" target="_blank" rel="noopener">
+        <a class="action-btn site" href="https://www.robert-platrerie-lemans.fr" target="_blank">
           <span class="icon">🌐</span>
           <span>Site web</span>
         </a>
