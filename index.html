@@ -4,6 +4,11 @@
   <meta charset="UTF-8" />
   <title>Carte de visite – Denis Lebesle</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- AJOUT : colore les barres blanches du haut/bas de Safari -->
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#0a0f1b">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0a0f1b">
+
   <style>
     * {
       box-sizing: border-box;
@@ -204,7 +209,7 @@
 
       <!-- Identité -->
       <div class="identity">
-        <div class="company">Société LUDOVIC ROBERT</div>
+        <div class="company">SAS LUDOVIC ROBERT</div>
         <div class="name">Denis Lebesle</div>
         <div class="role">Chargé d'affaires</div>
       </div>
@@ -224,10 +229,10 @@
           <span>Site web</span>
         </a>
 
-        <!-- Bouton Ajouter le contact (vCard directe, sans JS) -->
+        <!-- Bouton Ajouter le contact (vCard correcte) -->
         <a
           class="action-btn site"
-          href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0AVERSION%3A3.0%0AFN%3ADenis%20Lebesle%0AN%3ALebesle%3BDenis%3B%3B%3B%0AORG%3ASoci%C3%A9t%C3%A9%20LUDOVIC%20ROBERT%0ATITLE%3ACharg%C3%A9%20d%27affaires%0ATEL%3BTYPE%3Dcell%3A0673865797%0AEMAIL%3Adlebesle%40robert-platrerie.fr%0AURL%3Ahttps%3A%2F%2Fwww.robert-platrerie-lemans.fr%0AEND%3AVCARD"
+          href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0AVERSION%3A3.0%0AFN%3ADenis%20Lebesle%0AN%3ALebesle%3BDenis%3B%3B%3B%0AORG%3ASAS%20LUDOVIC%20ROBERT%0ATITLE%3ACharg%C3%A9%20d%27affaires%0ATEL%3BTYPE%3Dcell%3A0673865797%0AEMAIL%3Adlebesle%40robert-platrerie.fr%0AURL%3Ahttps%3A%2F%2Fwww.robert-platrerie-lemans.fr%0AEND%3AVCARD"
           download="Denis_Lebesle.vcf"
         >
           <span class="icon">➕</span>
@@ -247,7 +252,7 @@
       </div>
 
       <div class="footer-text">
-        Carte de visite dématérialisée – Société LUDOVIC ROBERT
+        Carte de visite dématérialisée par RG Card – SAS LUDOVIC ROBERT
       </div>
 
     </div>
