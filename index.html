@@ -222,6 +222,11 @@
           <span class="icon">🌐</span>
           <span>Site web</span>
         </a>
+        <!-- Bouton Ajouter le contact -->
+        <a class="action-btn site" href="#" onclick="addToContacts()">
+          <span class="icon">➕</span>
+          <span>Ajouter</span>
+        </a>
       </div>
 
       <!-- Map -->
@@ -236,11 +241,39 @@
       </div>
 
       <div class="footer-text">
-        Carte de visite dématérialisée – Société LUDOVIC ROBERT
+        Carte de visite RG Card– Société LUDOVIC ROBERT
       </div>
 
     </div>
   </div>
+
+  <script>
+    function addToContacts() {
+      const vcard =
+`BEGIN:VCARD
+VERSION:3.0
+FN:Denis Lebesle
+N:Lebesle;Denis;;;
+ORG:Société LUDOVIC ROBERT
+TITLE:Chargé d'affaires
+TEL;TYPE=cell:0673865797
+EMAIL:dlebesle@robert-platrerie.fr
+URL:https://www.robert-platrerie-lemans.fr
+END:VCARD`;
+
+      const blob = new Blob([vcard], { type: "text/vcard" });
+      const url = URL.createObjectURL(blob);
+
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "Denis_Lebesle.vcf";
+      document.body.appendChild(a);
+      a.click();
+
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+  </script>
 
 </body>
 </html>
