@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Carte de visite – Denis Lebesle</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     * {
       box-sizing: border-box;
@@ -12,7 +12,7 @@
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
-    /* Fond sur tout le viewport (évite le blanc en haut/bas) */
+    /* ---- AJOUT : étendre le fond sur toute la page (iPhone) ---- */
     html {
       height: 100%;
       background: radial-gradient(circle at top, #1f2638 0, #050611 50%, #020308 100%);
@@ -21,13 +21,14 @@
     body {
       height: 100%;
       min-height: 100vh;
-      min-height: 100svh; /* pour iOS / nouveaux navigateurs */
+      min-height: 100svh; /* iOS réel viewport */
       display: flex;
       align-items: center;
       justify-content: center;
       background: radial-gradient(circle at top, #1f2638 0, #050611 50%, #020308 100%);
       color: #f5f5f5;
     }
+    /* ---- FIN AJOUT ---- */
 
     .card-wrapper {
       padding: 20px;
@@ -149,7 +150,7 @@
       background: linear-gradient(135deg, #35548a, #23345b);
     }
 
-    /* Site / autres – gris bleu foncé */
+    /* Site – gris bleu foncé */
     .action-btn.site {
       background: linear-gradient(135deg, #3b404c, #262a34);
     }
@@ -211,7 +212,7 @@
 
       <!-- Identité -->
       <div class="identity">
-        <div class="company">SAS LUDOVIC ROBERT</div>
+        <div class="company">Société LUDOVIC ROBERT</div>
         <div class="name">Denis Lebesle</div>
         <div class="role">Chargé d'affaires</div>
       </div>
@@ -231,10 +232,10 @@
           <span>Site web</span>
         </a>
 
-        <!-- Bouton Ajouter le contact (vCard) -->
+        <!-- Bouton Ajouter le contact -->
         <a
           class="action-btn site"
-          href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0AVERSION%3A3.0%0AFN%3ADenis%20Lebesle%0AN%3ALebesle%3BDenis%3B%3B%3B%0AORG%3ASAS%20LUDOVIC%20ROBERT%0ATITLE%3ACharg%C3%A9%20d%27affaires%0ATEL%3BTYPE%3Dcell%3A0673865797%0AEMAIL%3Adlebesle%40robert-platrerie.fr%0AURL%3Ahttps%3A%2F%2Fwww.robert-platrerie-lemans.fr%0AEND%3AVCARD"
+          href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0AVERSION%3A3.0%0AFN%3ADenis%20Lebesle%0AN%3ALebesle%3BDenis%3B%3B%3B%0AORG%3ASoci%C3%A9t%C3%A9%20LUDOVIC%20ROBERT%0ATITLE%3ACharg%C3%A9%20d%27affaires%0ATEL%3BTYPE%3Dcell%3A0673865797%0AEMAIL%3Adlebesle%40robert-platrerie.fr%0AURL%3Ahttps%3A%2F%2Fwww.robert-platrerie-lemans.fr%0AEND%3AVCARD"
           download="Denis_Lebesle.vcf"
         >
           <span class="icon">➕</span>
@@ -254,7 +255,7 @@
       </div>
 
       <div class="footer-text">
-        Carte de visite dématérialisée – SAS LUDOVIC ROBERT
+        Carte de visite dématérialisée – Société LUDOVIC ROBERT
       </div>
 
     </div>
